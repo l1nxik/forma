@@ -1,0 +1,41 @@
+/** Neutral Forma palettes. VS Code presets remain available separately. */
+export const formaThemes = [
+  {
+    id: 'forma-light',
+    name: 'Forma Light',
+    dark: false,
+    colors: {
+      canvas: '#ffffff',
+      sidebar: '#f3f3f3',
+      surface: '#f5f5f5',
+      panel: '#fafafa',
+      text: '#242424',
+      muted: '#727272',
+      secondary: '#575757',
+      line: '#e7e7e7',
+      accent: '#292929',
+      accentInk: '#ffffff',
+      accentSoft: '#e9e9e9',
+      hover: '#eeeeee',
+    },
+  },
+  {
+    id: 'forma-dark',
+    name: 'Forma Dark',
+    dark: true,
+    colors: {
+      canvas: '#181818',
+      sidebar: '#232323',
+      surface: '#2d2d2d',
+      panel: '#202020',
+      text: '#eeeeee',
+      muted: '#999999',
+      secondary: '#bcbcbc',
+      line: '#353535',
+      accent: '#eeeeee',
+      accentInk: '#202020',
+      accentSoft: '#353535',
+      hover: '#303030',
+    },
+  },
+];

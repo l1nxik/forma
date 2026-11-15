@@ -1,0 +1,45 @@
+# Dependencies and generated build products (keep lockfiles and Gradle Wrapper).
+node_modules/
+dist/
+*.noindex/
+.gradle/
+backend/build/
+src-tauri/target/
+src-tauri/resources/backend/*
+!src-tauri/resources/backend/.gitkeep
+src-tauri/binaries/forma-backend-*
+src-tauri/gen/
+release/
+*.app/
+
+# Local databases, backups and diagnostics must never be committed.
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+Backups/
+*.log
+*.tsbuildinfo
+*.obj
+*.pdb
+__pycache__/
+*.pyc
+
+# Local configuration and signing credentials.
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+
+# Editor and OS metadata.
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/

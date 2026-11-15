@@ -1,0 +1,139 @@
+.deadline-calendar {
+  align-self: start;
+  padding: 15px;
+  border: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  border-radius: 24px;
+  background: var(--panel);
+}
+.calendar-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+.calendar-heading h2 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.calendar-heading .text-button {
+  font-size: 10px;
+}
+.calendar-month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.calendar-month h3 {
+  font-size: 11px;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+.calendar-month > div {
+  display: flex;
+}
+.calendar-month .icon-button {
+  width: 23px;
+  height: 25px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px 1px;
+}
+.calendar-weekday {
+  font-size: 9px;
+  text-align: center;
+  color: var(--muted);
+  padding: 4px 0 8px;
+}
+.calendar-grid > button {
+  position: relative;
+  padding: 0;
+  margin: auto;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  width: 25px;
+  height: 25px;
+}
+.calendar-grid > button:hover {
+  background: var(--hover);
+}
+.calendar-grid > button.is-today {
+  color: var(--accent);
+  font-weight: 650;
+}
+.calendar-grid > button.selected {
+  background: var(--accent-soft);
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.calendar-grid > button.has-deadline::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 11px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.calendar-grid > button.has-overdue::after {
+  background: var(--danger);
+}
+.calendar-deadline-list {
+  border-top: 1px solid var(--line);
+  padding-top: 4px;
+  margin-top: 15px;
+}
+.calendar-deadline-list .small-label {
+  font-weight: 550;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.calendar-empty {
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+  padding-top: 2px;
+}
+.deadline-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: none;
+  margin: 0 -5px;
+  padding: 8px 4px;
+  border-radius: 12px;
+}
+.deadline-row:hover {
+  background: var(--hover);
+}
+.deadline-row > svg {
+  color: var(--muted);
+  margin-top: 2px;
+}
+.deadline-row strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 450;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.deadline-row small {
+  display: block;
+  font-size: 9px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.upcoming-label {
+  padding-top: 12px;
+}

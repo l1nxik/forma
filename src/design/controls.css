@@ -1,0 +1,139 @@
+.page-heading > .button,
+.heading-actions {
+  margin-top: 3px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  box-shadow: none;
+  min-height: 32px;
+  padding: 0 13px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 550;
+  transition:
+    background 0.16s,
+    color 0.16s,
+    box-shadow 0.16s,
+    transform 0.16s;
+}
+.button.primary {
+  color: var(--accent-ink);
+  background: var(--accent);
+  box-shadow:
+    inset 0 1px 0 #ffffff28,
+    0 1px 3px #0000000e;
+}
+.button.primary:hover {
+  background: color-mix(in srgb, var(--accent) 87%, var(--text));
+}
+.button.secondary {
+  background: var(--glass-fill);
+  border-color: var(--glass-edge);
+  color: var(--text);
+  box-shadow: var(--control-shadow);
+  backdrop-filter: blur(16px) saturate(1.2);
+}
+.button.secondary:hover {
+  color: var(--text);
+  background: color-mix(in srgb, var(--canvas) 75%, var(--hover));
+  box-shadow:
+    inset 0 1px 0 var(--glass-highlight),
+    0 2px 7px #00000012;
+}
+.button.compact {
+  min-height: 27px;
+  padding: 0 10px;
+  font-size: 10px;
+}
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.icon-button:hover {
+  background: var(--hover);
+  color: var(--text);
+}
+.text-button {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: 11px;
+  padding: 5px;
+}
+.text-button:hover {
+  color: var(--text);
+}
+.segmented {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--text) 6%, transparent);
+  padding: 3px;
+  gap: 1px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--sidebar) 70%, var(--canvas));
+}
+.segmented > button {
+  border: 0;
+  background: none;
+  color: var(--secondary);
+  white-space: nowrap;
+  position: relative;
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 11px;
+}
+.segmented > button.selected {
+  color: var(--text);
+  font-weight: 550;
+  background: transparent;
+  box-shadow: none;
+}
+.segmented > button:hover:not(.selected) {
+  background: color-mix(in srgb, var(--canvas) 35%, transparent);
+}
+.notice {
+  padding: 13px 16px;
+  background: var(--accent-soft);
+  border-radius: 12px;
+  color: var(--secondary);
+  font-size: 11px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.segment-label {
+  position: relative;
+  z-index: 1;
+}
+.segment-lens {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--glass-selected);
+  border: 1px solid var(--glass-edge);
+  box-shadow: var(--control-shadow);
+}
+.row-actions .icon-button {
+  height: 26px;
+  width: 26px;
+}
+.empty-state .button {
+  margin-top: 14px;
+}

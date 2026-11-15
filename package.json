@@ -1,0 +1,40 @@
+{
+  "name": "forma",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "tauri": "tauri",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build",
+    "prepare:backend": "node scripts/desktop.mjs prepare",
+    "package:macos": "node scripts/desktop.mjs package darwin",
+    "format": "prettier --write src vite.config.ts tsconfig.json package.json src-tauri/*.json src-tauri/capabilities/*.json docs *.md scripts/*.mjs .github/workflows/*.yml",
+    "format:check": "prettier --check src vite.config.ts tsconfig.json package.json src-tauri/*.json src-tauri/capabilities/*.json docs *.md scripts/*.mjs .github/workflows/*.yml",
+    "package:desktop": "node scripts/desktop.mjs package",
+    "package:windows": "node scripts/desktop.mjs package win32"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "lucide-react": "^0.468.0",
+    "motion": "^12.23.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "prettier": "3.6.2",
+    "tailwindcss": "^4.1.12",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
+  },
+  "license": "MIT"
+}

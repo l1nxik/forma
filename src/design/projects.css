@@ -1,0 +1,94 @@
+.project-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--project-color, var(--muted));
+  flex-shrink: 0;
+}
+.project-segments {
+  margin-bottom: 18px;
+}
+.project-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--project-color) 13%, transparent);
+  color: var(--project-color);
+  margin-bottom: 19px;
+}
+.project-list {
+  border: 0;
+}
+.project-list-row {
+  display: flex;
+  align-items: center;
+  background: none;
+  text-align: left;
+  padding: 10px;
+  margin: 0 -10px;
+  width: calc(100% + 20px);
+  gap: 10px;
+  border: 0;
+  border-radius: 17px;
+}
+.project-list-row:hover {
+  background: var(--hover);
+}
+.project-list-row > .project-symbol {
+  margin: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+}
+.project-row-copy {
+  flex: 1;
+  min-width: 0;
+}
+.project-row-copy > strong {
+  display: block;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+}
+.project-row-copy > small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+.project-row-stats {
+  text-align: right;
+  flex-shrink: 0;
+  font-size: 10px;
+  color: var(--secondary);
+}
+.project-row-stats > small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.project-list-row > svg:last-child {
+  color: var(--muted);
+  margin-left: 4px;
+}
+.subprojects-section {
+  margin: 0 0 23px;
+  margin-bottom: 16px;
+}
+.subprojects-section .project-list:empty {
+  border: 0;
+}
+.task-status-tabs,
+.project-segments {
+  margin-bottom: 12px;
+}

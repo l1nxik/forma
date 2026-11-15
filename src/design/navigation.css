@@ -1,0 +1,264 @@
+/* One continuous surface keeps the navigation readable and quiet. */
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 212px;
+  width: 212px;
+  margin: 0;
+  padding: 0 10px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+  background: color-mix(in srgb, var(--sidebar) var(--glass-opacity), transparent);
+  user-select: none;
+  overflow: visible;
+}
+:root[data-native-glass='true'] .sidebar {
+  border-right-color: var(--line);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 15px 9px 17px;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.7px;
+}
+.brand > svg {
+  width: 28px;
+  height: 28px;
+}
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--text) 7%, transparent);
+  border-radius: 15px;
+  background: color-mix(in srgb, var(--canvas) 50%, var(--sidebar));
+  color: var(--secondary);
+  font-size: 11px;
+}
+.sidebar-search span {
+  flex: 1;
+  text-align: left;
+}
+.sidebar-search:hover {
+  background: var(--canvas);
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 13px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  height: 33px;
+  padding: 0 11px;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 450;
+}
+.nav-item > span:not(.nav-count) {
+  flex: 1;
+  text-align: left;
+}
+.nav-item > svg {
+  color: var(--secondary);
+}
+.nav-item:hover {
+  background: color-mix(in srgb, var(--canvas) 60%, transparent);
+}
+.nav-item.active {
+  background: var(--hover);
+  box-shadow: none;
+  font-weight: 600;
+}
+.nav-item.active > svg {
+  color: var(--accent);
+}
+.nav-count {
+  color: var(--secondary);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.sidebar-projects {
+  margin-top: 22px;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 1px 8px;
+}
+.sidebar-projects-heading {
+  padding: 0 11px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+.sidebar-project-row {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.sidebar-project-row > .icon-button {
+  width: 18px;
+  height: 27px;
+  color: var(--secondary);
+}
+.sidebar-project-row > button:last-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  height: 29px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 14px;
+  background: none;
+  text-align: left;
+  color: var(--text);
+  font-size: 11px;
+}
+.sidebar-project-row > button:last-child span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sidebar-project-row > button:last-child:hover {
+  background: color-mix(in srgb, var(--canvas) 60%, transparent);
+}
+.sidebar-project-row > button[aria-current='page']:last-child {
+  background: var(--hover);
+  font-weight: 600;
+  box-shadow: none;
+}
+.sidebar-project-row:not(:has(> .icon-button)) {
+  padding-left: 18px;
+}
+.sidebar-project-children {
+  padding-left: 12px;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 14px 0 6px;
+}
+.settings-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 11px;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  color: var(--secondary);
+  font-size: 11px;
+}
+.settings-nav span {
+  flex: 1;
+  text-align: left;
+}
+.settings-nav:hover {
+  background: color-mix(in srgb, var(--canvas) 60%, transparent);
+}
+.mini-focus {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 7px 10px 11px;
+  margin-bottom: 8px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--canvas);
+}
+.mini-focus-body {
+  display: grid;
+  grid-template-columns: 6px 1fr;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+}
+.mini-focus-body > span:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--secondary);
+  font-size: 10px;
+}
+.mini-focus-body strong {
+  grid-column: 2;
+  font-size: 15px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.pulse-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.pulse-dot.paused {
+  background: var(--muted);
+}
+
+/* The same navigation becomes an icon rail, retaining every primary action. */
+.sidebar.sidebar-compact {
+  width: 60px;
+  flex-basis: 60px;
+  padding: 0 7px;
+}
+.sidebar-compact .brand {
+  justify-content: center;
+  padding: 15px 0 17px;
+}
+.sidebar-compact .brand > span,
+.sidebar-compact .sidebar-search > span,
+.sidebar-compact kbd,
+.sidebar-compact .nav-item > span,
+.sidebar-compact .settings-nav > span,
+.sidebar-compact .sidebar-projects,
+.sidebar-compact .mini-focus {
+  display: none;
+}
+.sidebar-compact .sidebar-search {
+  justify-content: center;
+  padding: 0;
+  border-color: transparent;
+  background: none;
+}
+.sidebar-compact .nav-item {
+  position: relative;
+  justify-content: center;
+  padding: 0;
+  height: 36px;
+}
+.sidebar-compact .settings-nav {
+  justify-content: center;
+  padding: 9px 0;
+}
+.compact-focus-indicator {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 5px;
+  height: 5px;
+}

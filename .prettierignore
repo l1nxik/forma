@@ -1,0 +1,11 @@
+node_modules
+dist
+backend
+src-tauri/target
+src-tauri/resources
+src-tauri/gen
+package-lock.json
+
+src-tauri/target.noindex
+backend/build.noindex
+dist.noindex

@@ -1,0 +1,290 @@
+{
+  "source": "https://github.com/microsoft/vscode/tree/d03edc4b18d687c45af067195bad9544b5b07475",
+  "themes": [
+    {
+      "id": "light-modern",
+      "name": "Light Modern",
+      "dark": false,
+      "colors": {
+        "canvas": "#FFFFFF",
+        "sidebar": "#F8F8F8",
+        "surface": "#F8F8F8",
+        "panel": "#fafafa",
+        "text": "#3B3B3B",
+        "muted": "#898989",
+        "secondary": "#626262",
+        "line": "#E5E5E5",
+        "accent": "#005FB8",
+        "accentInk": "#ffffff",
+        "accentSoft": "#e6eff8",
+        "hover": "#f4f4f4"
+      }
+    },
+    {
+      "id": "dark-modern",
+      "name": "Dark Modern",
+      "dark": true,
+      "colors": {
+        "canvas": "#1F1F1F",
+        "sidebar": "#181818",
+        "surface": "#202020",
+        "panel": "#232323",
+        "text": "#CCCCCC",
+        "muted": "#878787",
+        "secondary": "#a9a9a9",
+        "line": "#313131",
+        "accent": "#0078D4",
+        "accentInk": "#ffffff",
+        "accentSoft": "#193143",
+        "hover": "#292929"
+      }
+    },
+    {
+      "id": "light-plus",
+      "name": "Light+",
+      "dark": false,
+      "colors": {
+        "canvas": "#FFFFFF",
+        "sidebar": "#f6f6f6",
+        "surface": "#FFFFFF",
+        "panel": "#f9f9f9",
+        "text": "#000000",
+        "muted": "#666666",
+        "secondary": "#333333",
+        "line": "#d4d4d4",
+        "accent": "#007ACC",
+        "accentInk": "#ffffff",
+        "accentSoft": "#e6f2fa",
+        "hover": "#f1f1f1"
+      }
+    },
+    {
+      "id": "dark-plus",
+      "name": "Dark+",
+      "dark": true,
+      "colors": {
+        "canvas": "#1E1E1E",
+        "sidebar": "#242424",
+        "surface": "#1E1E1E",
+        "panel": "#232323",
+        "text": "#D4D4D4",
+        "muted": "#8b8b8b",
+        "secondary": "#b0b0b0",
+        "line": "#303031",
+        "accent": "#007ACC",
+        "accentInk": "#ffffff",
+        "accentSoft": "#183041",
+        "hover": "#282828"
+      }
+    },
+    {
+      "id": "quiet-light",
+      "name": "Quiet Light",
+      "dark": false,
+      "colors": {
+        "canvas": "#F5F5F5",
+        "sidebar": "#F2F2F2",
+        "surface": "#F5F5F5",
+        "panel": "#f0f0f0",
+        "text": "#333333",
+        "muted": "#818181",
+        "secondary": "#5a5a5a",
+        "line": "#dadada",
+        "accent": "#705697",
+        "accentInk": "#ffffff",
+        "accentSoft": "#e8e5ec",
+        "hover": "#eaeaea"
+      }
+    },
+    {
+      "id": "solarized-light",
+      "name": "Solarized Light",
+      "dark": false,
+      "colors": {
+        "canvas": "#FDF6E3",
+        "sidebar": "#EEE8D5",
+        "surface": "#EEE8D5",
+        "panel": "#f9f3e1",
+        "text": "#657B83",
+        "muted": "#a2aca9",
+        "secondary": "#839496",
+        "line": "#e8e5d6",
+        "accent": "#AC9D57",
+        "accentInk": "#ffffff",
+        "accentSoft": "#f5edd5",
+        "hover": "#f5efde"
+      }
+    },
+    {
+      "id": "solarized-dark",
+      "name": "Solarized Dark",
+      "dark": true,
+      "colors": {
+        "canvas": "#002B36",
+        "sidebar": "#00212B",
+        "surface": "#00212B",
+        "panel": "#032e38",
+        "text": "#839496",
+        "muted": "#4f6a70",
+        "secondary": "#697f83",
+        "line": "#123a43",
+        "accent": "#197271",
+        "accentInk": "#ffffff",
+        "accentSoft": "#053942",
+        "hover": "#07313b"
+      }
+    },
+    {
+      "id": "monokai",
+      "name": "Monokai",
+      "dark": true,
+      "colors": {
+        "canvas": "#272822",
+        "sidebar": "#1e1f1c",
+        "surface": "#1e1f1c",
+        "panel": "#2c2d27",
+        "text": "#f8f8f2",
+        "muted": "#a4a59f",
+        "secondary": "#cecec8",
+        "line": "#44453f",
+        "accent": "#75715E",
+        "accentInk": "#ffffff",
+        "accentSoft": "#37372e",
+        "hover": "#32332d"
+      }
+    },
+    {
+      "id": "monokai-dimmed",
+      "name": "Monokai Dimmed",
+      "dark": true,
+      "colors": {
+        "canvas": "#1e1e1e",
+        "sidebar": "#272727",
+        "surface": "#1e1e1e",
+        "panel": "#222222",
+        "text": "#c5c8c6",
+        "muted": "#828483",
+        "secondary": "#a4a6a4",
+        "line": "#353636",
+        "accent": "#565656",
+        "accentInk": "#ffffff",
+        "accentSoft": "#292929",
+        "hover": "#272727"
+      }
+    },
+    {
+      "id": "abyss",
+      "name": "Abyss",
+      "dark": true,
+      "colors": {
+        "canvas": "#000c18",
+        "sidebar": "#060621",
+        "surface": "#262641",
+        "panel": "#030f1d",
+        "text": "#6688cc",
+        "muted": "#3d5684",
+        "secondary": "#526fa8",
+        "line": "#0e1d31",
+        "accent": "#2B3C5D",
+        "accentInk": "#ffffff",
+        "accentSoft": "#091626",
+        "hover": "#061322"
+      }
+    },
+    {
+      "id": "kimbie-dark",
+      "name": "Kimbie Dark",
+      "dark": true,
+      "colors": {
+        "canvas": "#221a0f",
+        "sidebar": "#362712",
+        "surface": "#131510",
+        "panel": "#261e12",
+        "text": "#d3af86",
+        "muted": "#8c7356",
+        "secondary": "#b0916e",
+        "line": "#3b2f20",
+        "accent": "#6e583b",
+        "accentInk": "#ffffff",
+        "accentSoft": "#312618",
+        "hover": "#2c2216"
+      }
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "dark": true,
+      "colors": {
+        "canvas": "#390000",
+        "sidebar": "#330000",
+        "surface": "#300000",
+        "panel": "#3e0606",
+        "text": "#F8F8F8",
+        "muted": "#ac9595",
+        "secondary": "#d2c6c6",
+        "line": "#542323",
+        "accent": "#883333",
+        "accentInk": "#ffffff",
+        "accentSoft": "#490a0a",
+        "hover": "#440e0e"
+      }
+    },
+    {
+      "id": "tomorrow-night-blue",
+      "name": "Tomorrow Night Blue",
+      "dark": true,
+      "colors": {
+        "canvas": "#002451",
+        "sidebar": "#001c40",
+        "surface": "#001c40",
+        "panel": "#062955",
+        "text": "#ffffff",
+        "muted": "#99a7b9",
+        "secondary": "#ccd3dc",
+        "line": "#244369",
+        "accent": "#bbdaff",
+        "accentInk": "#171717",
+        "accentSoft": "#254874",
+        "hover": "#0e305b"
+      }
+    },
+    {
+      "id": "high-contrast-dark",
+      "name": "High Contrast Dark",
+      "dark": true,
+      "colors": {
+        "canvas": "#000000",
+        "sidebar": "#090909",
+        "surface": "#000000",
+        "panel": "#060606",
+        "text": "#FFFFFF",
+        "muted": "#999999",
+        "secondary": "#cccccc",
+        "line": "#242424",
+        "accent": "#0078d4",
+        "accentInk": "#ffffff",
+        "accentSoft": "#00182a",
+        "hover": "#0e0e0e"
+      }
+    },
+    {
+      "id": "high-contrast-light",
+      "name": "High Contrast Light",
+      "dark": false,
+      "colors": {
+        "canvas": "#ffffff",
+        "sidebar": "#f8f8f8",
+        "surface": "#ffffff",
+        "panel": "#fafafa",
+        "text": "#333333",
+        "muted": "#858585",
+        "secondary": "#5c5c5c",
+        "line": "#e2e2e2",
+        "accent": "#0078d4",
+        "accentInk": "#ffffff",
+        "accentSoft": "#e6f2fb",
+        "hover": "#f4f4f4"
+      }
+    }
+  ]
+}
