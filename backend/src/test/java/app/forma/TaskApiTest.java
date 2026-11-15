@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.transaction.support.TransactionTemplate;
@@ -22,6 +23,8 @@ import org.springframework.transaction.support.TransactionTemplate;
 @SpringBootTest(
     webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
     properties = {"FORMA_API_TOKEN=0123456789abcdef0123456789abcdef"})
+// Close the connection pool before JUnit removes the temporary SQLite files.
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 class TaskApiTest {
   @TempDir static Path directory;
 

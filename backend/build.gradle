@@ -15,7 +15,11 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
-tasks.named('test') { useJUnitPlatform(); jvmArgs '--enable-native-access=ALL-UNNAMED' }
+tasks.named('test') {
+    useJUnitPlatform()
+    jvmArgs '--enable-native-access=ALL-UNNAMED'
+    testLogging { exceptionFormat = 'full' }
+}
 tasks.named('bootJar') { archiveFileName = 'forma-backend.jar' }
 
 dependencyLocking { lockAllConfigurations() }

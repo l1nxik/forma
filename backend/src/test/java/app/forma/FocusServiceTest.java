@@ -14,11 +14,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.*;
 import org.springframework.context.annotation.*;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.*;
 
 @SpringBootTest(
     classes = {FormaApplication.class, FocusServiceTest.TestTime.class},
     properties = {"FORMA_API_TOKEN=0123456789abcdef0123456789abcdef"})
+// Close the connection pool before JUnit removes the temporary SQLite files.
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 class FocusServiceTest {
   @TempDir static Path directory;
 

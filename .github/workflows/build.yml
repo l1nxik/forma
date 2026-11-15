@@ -62,6 +62,16 @@ jobs:
         run: cargo fmt --manifest-path src-tauri/Cargo.toml --check
       - name: Test backend and package desktop app
         run: npm run package:desktop
+      - name: Upload backend failure reports
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.artifact }}-test-reports
+          path: |
+            backend/build.noindex/test-results/test/*.xml
+            backend/build.noindex/reports/tests/test/
+          if-no-files-found: ignore
+          retention-days: 14
       - name: Upload packages
         uses: actions/upload-artifact@v7
         with:
